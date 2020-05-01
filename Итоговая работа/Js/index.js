@@ -20,3 +20,14 @@ window.addEventListener( "load", function () {
        navigation.classList.toggle("active");  
     });
 });
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+  $('.owl-carousel').owlCarousel({
+    margin:330,
+    autoWidth:true,
+    center:true,
+    loop:true,
+    nav:true
+})
