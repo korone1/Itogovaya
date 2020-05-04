@@ -93,7 +93,7 @@ body {
   height: 50px;
   position: relative;
   top: 10px;
-  right: 80px;
+  right: 78px;
 }
 
 .smart__btn a {
@@ -161,7 +161,7 @@ body {
 }
 
 .headerPic {
-  background: url("../../img/aboutcenterslider.png") no-repeat center/cover;
+  background: url("../../img/homecenterslider.png") no-repeat center/cover;
 }
 
 .headerPic .hSlides {
@@ -433,7 +433,7 @@ body {
 
 @media screen and (max-width: 772px) {
   .footerIocns .icon {
-    padding: 20px 20px;
+    padding: 20px 15px;
   }
 }
 
@@ -476,4 +476,181 @@ body {
 .footerText p span {
   color: #777;
   font-weight: 700;
+}
+
+.aboutHeader {
+  background: #efeff1;
+}
+
+.aboutHeader .aboutSection1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.aboutHeader .aboutSection1 .aboutSectionText1 {
+  padding-left: 80px;
+}
+
+.aboutHeader .aboutSection1 .aboutSectionText1 h1 {
+  background: #000;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 0.2em;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 h1 {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 h1 {
+    font-size: 10px;
+    padding: 0px 10px;
+  }
+}
+
+.aboutHeader .aboutSection1 .aboutSectionText1 p {
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 p {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutHeader .aboutSection1 .aboutSectionText1 p {
+    font-size: 5px;
+  }
+}
+
+.aboutHeader .aboutSectionPic1 img {
+  max-width: 750px;
+  width: 100%;
+}
+
+.aboutSection {
+  padding: 40px 80px;
+  background: #fafafa;
+}
+
+.aboutSection .aboutSectionPic2 img {
+  width: 100%;
+}
+
+.aboutSectionText2 .ourH6 {
+  margin-bottom: 30px;
+}
+
+.aboutSectionText2 h6 {
+  letter-spacing: 0.6em;
+  font-size: 25px;
+}
+
+.aboutSectionText2 p {
+  line-height: 1.6em;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.aboutAvesome {
+  padding: 40px 80px;
+  background: #fafafa;
+}
+
+.aboutAvesome .avesomeHead h2 {
+  letter-spacing: 0.5em;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 772px) {
+  .aboutAvesome .avesomeHead h2 {
+    font-size: 18px;
+  }
+}
+
+.aboutAvesome .avesomeHead p {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6em;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+.avesomePics {
+  padding: 40px 0;
+}
+
+.avesomePics .aboutPic .aboutImg {
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #eee;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 490px) {
+  .avesomePics .aboutPic .aboutImg {
+    background: none;
+  }
+}
+
+.avesomePics .aboutTextPic {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.avesomePics .aboutTextPic h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.avesomePics .aboutTextPic h6 {
+  font-weight: 600;
+}
+
+.avesomePics .aboutTextPic p {
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #9c9c9c;
 }

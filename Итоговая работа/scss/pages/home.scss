@@ -52,7 +52,7 @@
   height: 50px;
   position: relative;
   top: 10px;
-  right: 80px;
+  right: 78px;
   a {
     text-decoration: none;
     p {
@@ -105,7 +105,7 @@
 }
 
 .headerPic {
-  background: url("../../img/aboutcenterslider.png") no-repeat center/cover;
+  background: url("../../img/homecenterslider.png") no-repeat center/cover;
   .hSlides {
     padding: 260px 0;
     h1 {
@@ -294,7 +294,7 @@
     align-items: center;
     padding: 20px 40px;
     @media screen and (max-width: 772px) {
-      padding: 20px 20px;
+      padding: 20px 15px;
     }
     a i {
       font-size: 20px;

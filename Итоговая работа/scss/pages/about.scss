@@ -1,0 +1,133 @@
+.aboutHeader {
+  background: #efeff1;
+  .aboutSection1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .aboutSectionText1 {
+      padding-left: 80px;
+      h1 {
+        background: #000;
+        color: #fff;
+        font-size: 35px;
+        letter-spacing: 0.2em;
+        padding: 10px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        @media screen and (max-width: 992px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 772px) {
+          font-size: 15px;
+          padding: 10px 10px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 10px;
+          padding: 0px 10px;
+        }
+      }
+      p {
+        padding-top: 20px;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 24px;
+        letter-spacing: 0.2em;
+        @media screen and (max-width: 992px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 772px) {
+          font-size: 8px;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 5px;
+        }
+      }
+    }
+  }
+  .aboutSectionPic1 {
+    img {
+      max-width: 750px;
+      width: 100%;
+    }
+  }
+}
+.aboutSection {
+  padding: 40px 80px;
+  background: #fafafa;
+  .aboutSectionPic2 {
+    img {
+      width: 100%;
+    }
+  }
+}
+.aboutSectionText2 {
+  .ourH6 {
+    margin-bottom: 30px;
+  }
+  h6 {
+    letter-spacing: 0.6em;
+    font-size: 25px;
+  }
+  p {
+    line-height: 1.6em;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+}
+.aboutAvesome {
+  padding: 40px 80px;
+  background: #fafafa;
+  .avesomeHead {
+    h2 {
+      letter-spacing: 0.5em;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 auto;
+      @media screen and (max-width: 772px) {
+        font-size: 18px;
+      }
+    }
+    p {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.6em;
+      font-size: 16px;
+      padding: 30px 0;
+    }
+  }
+}
+.avesomePics {
+  padding: 40px 0;
+  .aboutPic {
+    .aboutImg {
+      max-height: 400px;
+      display: flex;
+      justify-content: center;
+      background: #eee;
+      padding: 0 20px;
+      @media screen and (max-width: 490px) {
+        background: none;
+      }
+    }
+  }
+  .aboutTextPic {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    h3 {
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+    h6 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6em;
+      color: #9c9c9c;
+    }
+  }
+}
