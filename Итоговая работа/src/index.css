@@ -92,8 +92,8 @@ body {
   width: 50px;
   height: 50px;
   position: relative;
-  top: 5px;
-  right: 100px;
+  top: 10px;
+  right: 80px;
 }
 
 .smart__btn a {
@@ -110,7 +110,7 @@ body {
   .header__Navlist {
     position: fixed;
     top: 3px;
-    right: 10px;
+    right: 0;
     background: #999;
     z-index: 1000;
     /* display: none; */
@@ -121,6 +121,8 @@ body {
     border-radius: 10px;
   }
   .header__Navlist ul {
+    padding-right: 0;
+    padding-left: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -142,10 +144,6 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: none;
-  }
-  .header__Navlist ul li a i {
-    margin-top: 4px;
-    font-size: 10px;
   }
   .header__Navlist.active {
     -webkit-transform: translateY(0);
@@ -176,6 +174,19 @@ body {
   font-size: 46px;
   letter-spacing: 0.2em;
   padding: 5px 25px;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .headerPic .hSlides h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .headerPic .hSlides h1 {
+    font-size: 15px;
+  }
 }
 
 .headerPic .hSlides p {
@@ -185,6 +196,18 @@ body {
   color: #000;
   font-size: 24px;
   letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: 992px) {
+  .headerPic .hSlides p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .headerPic .hSlides p {
+    font-size: 10px;
+  }
 }
 
 .owl-nav {
@@ -224,6 +247,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 5px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -243,6 +268,12 @@ body {
   transition: 0.5s;
 }
 
+@media screen and (max-width: 772px) {
+  .iteM ul li {
+    padding-right: 40px;
+  }
+}
+
 .iteM ul li a {
   font-size: 14px;
   color: #777;
@@ -251,6 +282,12 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-weight: 600;
+}
+
+@media screen and (max-width: 772px) {
+  .iteM ul li a {
+    font-size: 10px;
+  }
 }
 
 .iteM ul li a:hover {
@@ -283,9 +320,21 @@ body {
   gap: 20px;
 }
 
+@media screen and (max-width: 772px) {
+  .homeGrids {
+    gap: 10px;
+  }
+}
+
 .homeGrids .hGrid {
   margin-bottom: 20px;
   position: relative;
+}
+
+@media screen and (max-width: 772px) {
+  .homeGrids .hGrid {
+    margin-bottom: 10px;
+  }
 }
 
 .homeGrids .hGrid img {
@@ -306,16 +355,14 @@ body {
 }
 
 .homeGrids .hGridBg a {
-  font-size: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-size: 75px;
+  display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  height: calc(100% / 2);
   color: #fff;
   text-decoration: none;
-  top: 50%;
 }
 
 .homeGrids .hGridBg:hover {
@@ -384,11 +431,23 @@ body {
   padding: 20px 40px;
 }
 
+@media screen and (max-width: 772px) {
+  .footerIocns .icon {
+    padding: 20px 20px;
+  }
+}
+
 .footerIocns .icon a i {
   font-size: 20px;
   color: #999;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+
+@media screen and (max-width: 772px) {
+  .footerIocns .icon a i {
+    font-size: 15px;
+  }
 }
 
 .footerIocns .icon a i:hover {

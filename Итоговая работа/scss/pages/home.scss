@@ -51,8 +51,8 @@
   width: 50px;
   height: 50px;
   position: relative;
-  top: 5px;
-  right: 100px;
+  top: 10px;
+  right: 80px;
   a {
     text-decoration: none;
     p {
@@ -66,7 +66,7 @@
   .header__Navlist {
     position: fixed;
     top: 3px;
-    right: 10px;
+    right: 0;
     background: #999;
     z-index: 1000;
     /* display: none; */
@@ -74,6 +74,8 @@
     transition: 1s;
     border-radius: 10px;
     ul {
+      padding-right: 0;
+      padding-left: 40px;
       display: flex;
       flex-direction: column;
       list-style: none;
@@ -87,10 +89,6 @@
           color: #fff;
           text-decoration: none;
           text-transform: none;
-          i {
-            margin-top: 4px;
-            font-size: 10px;
-          }
         }
       }
     }
@@ -116,6 +114,13 @@
       font-size: 46px;
       letter-spacing: 0.2em;
       padding: 5px 25px;
+      text-align: center;
+      @media screen and (max-width: 992px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 572px) {
+        font-size: 15px;
+      }
     }
     p {
       padding-top: 20px;
@@ -124,6 +129,12 @@
       color: #000;
       font-size: 24px;
       letter-spacing: 0.2em;
+      @media screen and (max-width: 992px) {
+        font-size: 15px;
+      }
+      @media screen and (max-width: 572px) {
+        font-size: 10px;
+      }
     }
   }
 }
@@ -157,6 +168,7 @@
   ul {
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     padding-top: 5px;
     align-items: center;
     justify-content: center;
@@ -167,6 +179,9 @@
       padding-right: 50px;
       text-decoration: none;
       transition: 0.5s;
+      @media screen and (max-width: 772px) {
+        padding-right: 40px;
+      }
       a {
         font-size: 14px;
         color: #777;
@@ -174,6 +189,9 @@
         position: relative;
         transition: 0.3s;
         font-weight: 600;
+        @media screen and (max-width: 772px) {
+          font-size: 10px;
+        }
         &:hover {
           color: #000;
         }
@@ -204,38 +222,41 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  @media screen and (max-width: 772px) {
+    gap: 10px;
+  }
   .hGrid {
     margin-bottom: 20px;
     position: relative;
+    @media screen and (max-width: 772px) {
+      margin-bottom: 10px;
+    }
     img {
       width: 100%;
     }
-  }  
+  }
   .hGridBg {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: linear-gradient(
-      to top,
-      rgba(145, 131, 131, 0.6) 100%
-    );
+    background-image: linear-gradient(to top, rgba(145, 131, 131, 0.6) 100%);
     transition: 0.4s;
     opacity: 0;
-    a {
-      font-size: 60px;
-      display: flex;
+       a {
+      font-size: 75px;
+      display: none;
       justify-content: center;
+      /// Плюс внутри доделать
+      height: calc(100% / 2);
       color: #fff;
       text-decoration: none;
-      top: 50%;
     }
     &:hover {
       opacity: 1;
     }
   }
-  
 }
 
 /// Home button
@@ -272,10 +293,16 @@
     display: flex;
     align-items: center;
     padding: 20px 40px;
+    @media screen and (max-width: 772px) {
+      padding: 20px 20px;
+    }
     a i {
       font-size: 20px;
       color: #999;
       transition: 0.7s;
+      @media screen and (max-width: 772px) {
+        font-size: 15px;
+      }
       &:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
