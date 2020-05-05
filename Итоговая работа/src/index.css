@@ -223,7 +223,11 @@ body {
   height: 0;
 }
 
-.owl-nav span {
+.owl-nav button {
+  outline: none;
+}
+
+.owl-nav button span {
   font-size: 30px;
   color: #777;
   padding: 0 15px;
@@ -232,7 +236,7 @@ body {
   border: 1px solid #777;
 }
 
-.owl-nav span:hover {
+.owl-nav button span:hover {
   background: none;
 }
 
@@ -261,8 +265,7 @@ body {
 }
 
 .iteM ul li {
-  padding: 20px 0;
-  padding-right: 50px;
+  padding: 20px 20px;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -297,7 +300,7 @@ body {
 .iteM ul li a::after {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -30px;
   top: 7px;
   width: 30px;
   height: 1px;
@@ -476,6 +479,45 @@ body {
 .footerText p span {
   color: #777;
   font-weight: 700;
+}
+
+#buttonTop {
+  display: none;
+  background-color: #777;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 1000;
+}
+
+#buttonTop.show {
+  display: inline-block;
+}
+
+#buttonTop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#buttonTop:active {
+  background-color: #555;
+}
+
+#buttonTop::after {
+  content: "\F077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 50px;
+  color: #fff;
 }
 
 .aboutHeader {
