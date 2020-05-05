@@ -626,6 +626,11 @@ body {
   margin-bottom: 30px;
 }
 
+.aboutSectionText2 img {
+  width: 100%;
+  padding: 15px 0;
+}
+
 .aboutAvesome {
   padding: 40px 80px;
   background: #fafafa;
