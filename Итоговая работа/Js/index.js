@@ -54,6 +54,9 @@ jQuery(document).ready(function() {
   });
 
   $(".InputBtn").on("click", function() {
-    $(".navInput").animate().toggleClass("activeInput");
+    $(".navInput").toggleClass("activeInput");
+  });
+  $("#thema").on("click", function() {
+    $("body, .aboutAvesome, .aboutSection, .Items").toggleClass("themaBack");
   });
 });

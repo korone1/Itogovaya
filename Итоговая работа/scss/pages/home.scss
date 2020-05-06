@@ -16,13 +16,13 @@
     list-style: none;
     padding-top: 5px;
     justify-content: space-between;
-    li {
+    li{
       padding-top: 25px;
       padding-right: 50px;
       text-decoration: none;
       transition: 0.5s;
       a {
-        font-size: 14px;
+        font-size: 15px;
         color: #777;
         text-decoration: none;
         position: relative;
@@ -43,15 +43,16 @@
       }
     }
     .navInput {
-      display: none;
-      opacity: 0.3;
-      transition: 1s;
+      width: 0;
+      transition: 0.5s;
+      border: 0;
       &.activeInput {
-        margin-top: 0px;
+        width: 100%;
         display: inline-block;
         opacity: 1;
         outline: none;
         border-radius: 15px;
+        border: 1px solid #777;
       }
     }
   }
