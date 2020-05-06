@@ -81,6 +81,21 @@ body {
   background: #000;
 }
 
+.header__Navlist ul .navInput {
+  display: none;
+  opacity: 0.3;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__Navlist ul .navInput.activeInput {
+  margin-top: 0px;
+  display: inline-block;
+  opacity: 1;
+  outline: none;
+  border-radius: 15px;
+}
+
 .smart__btn {
   display: none;
   -webkit-box-pack: center;
@@ -700,4 +715,8 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   color: #9c9c9c;
+}
+
+.portfolioHead {
+  background-color: #e2e2e2;
 }

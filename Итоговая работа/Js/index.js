@@ -30,9 +30,10 @@ $(".owl-carousel").owlCarousel({
   center: true,
   loop: true,
   nav: true,
-  dots: true
+  dots: true,
 });
 
+/// Кнопка наверх и страница Абаут анимация айтемов
 jQuery(document).ready(function() {
   let btn = $("#buttonTop");
   let animated = $(".avesomePics");
@@ -40,15 +41,19 @@ jQuery(document).ready(function() {
   $(window).scroll(function() {
     if ($(window).scrollTop() > 1000) {
       btn.addClass("show");
-      animated.addClass('pulse');
+      animated.addClass("pulse");
     } else {
       btn.removeClass("show");
-      animated.reomoveClass('pulse');
+      animated.removeClass("pulse");
     }
   });
 
   btn.on("click", function(e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "300");
+  });
+
+  $(".InputBtn").on("click", function() {
+    $(".navInput").animate().toggleClass("activeInput");
   });
 });

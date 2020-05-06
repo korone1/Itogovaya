@@ -42,6 +42,18 @@
         }
       }
     }
+    .navInput {
+      display: none;
+      opacity: 0.3;
+      transition: 1s;
+      &.activeInput {
+        margin-top: 0px;
+        display: inline-block;
+        opacity: 1;
+        outline: none;
+        border-radius: 15px;
+      }
+    }
   }
 } // Smart btn
 .smart__btn {
@@ -206,7 +218,7 @@
           height: 1px;
           background: #777;
           transform: rotate(-70deg);
-        }
+      }
       }
     }
     .firsrItem {
