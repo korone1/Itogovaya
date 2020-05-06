@@ -190,7 +190,7 @@
     justify-content: center;
     border-top: 1px solid #777;
     border-bottom: 1px solid #777;
-    li {
+    li:not(:first-child) {
       padding: 20px 20px;
       text-decoration: none;
       transition: 0.5s;
@@ -225,6 +225,14 @@
     .firsrItem {
       a {
         color: #000;
+        font-size: 14px;
+        transition: 0.3s;
+        font-weight: 600;
+        padding-right: 15px;
+        text-decoration: none;
+        @media screen and (max-width: 772px) {
+          font-size: 10px;
+        }
         &:hover {
           color: #777;
         }

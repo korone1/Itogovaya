@@ -370,7 +370,7 @@ body {
   border-bottom: 1px solid #777;
 }
 
-.iteM ul li {
+.iteM ul li:not(:first-child) {
   padding: 20px 20px;
   text-decoration: none;
   -webkit-transition: 0.5s;
@@ -378,12 +378,12 @@ body {
 }
 
 @media screen and (max-width: 772px) {
-  .iteM ul li {
+  .iteM ul li:not(:first-child) {
     padding-right: 40px;
   }
 }
 
-.iteM ul li a {
+.iteM ul li:not(:first-child) a {
   font-size: 14px;
   color: #777;
   text-decoration: none;
@@ -394,16 +394,16 @@ body {
 }
 
 @media screen and (max-width: 772px) {
-  .iteM ul li a {
+  .iteM ul li:not(:first-child) a {
     font-size: 10px;
   }
 }
 
-.iteM ul li a:hover {
+.iteM ul li:not(:first-child) a:hover {
   color: #000;
 }
 
-.iteM ul li a::after {
+.iteM ul li:not(:first-child) a::after {
   content: "";
   position: absolute;
   left: -30px;
@@ -417,6 +417,18 @@ body {
 
 .iteM ul .firsrItem a {
   color: #000;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 772px) {
+  .iteM ul .firsrItem a {
+    font-size: 10px;
+  }
 }
 
 .iteM ul .firsrItem a:hover {
