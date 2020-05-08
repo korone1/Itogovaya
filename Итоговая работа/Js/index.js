@@ -25,7 +25,7 @@ $(document).ready(function() {
   $(".owl-carousel").owlCarousel();
 });
 $(".owl-carousel").owlCarousel({
-  margin: 330,
+  margin: 300,
   autoWidth: true,
   center: true,
   loop: true,
