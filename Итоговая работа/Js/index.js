@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
     $(".navInput").toggleClass("activeInput");
   });
   $("#thema").on("click", function() {
-    $("body, .aboutAvesome, .aboutSection, .Items").toggleClass("themaBack");
+    $("body, .aboutAvesome, .aboutSection, .Items, .SingleContent").toggleClass("themaBack");
   });
 
   /// Input 
