@@ -1044,11 +1044,153 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 20px;
+}
+
+.perieraShare .perBtn {
+  background: #777;
+  color: #fafafa;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.perieraShare .perBtn i {
+  padding-right: 3px;
+  font-size: 13px;
 }
 
 .perieraShare .perieraIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20px;
+  margin-left: 20px;
+  background-color: #777;
+  border-radius: 2px;
+}
+
+.perieraShare .perieraIcons .iconPer {
+  padding: 10px 15px;
+}
+
+.perieraShare .perieraIcons .iconPer i {
+  color: #555;
+  font-size: 15px;
+}
+
+.Related {
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.Related h3 {
+  letter-spacing: 0.7em;
+  text-transform: uppercase;
+}
+
+.Related p {
+  padding-top: 15px;
+  text-align: center;
+  max-width: 600px;
+  line-height: 2em;
+  color: #777;
+  margin: 0 auto;
+}
+
+.Related .relRow {
+  padding: 40px 0;
+}
+
+.Related .relRow .relPic img {
+  width: 100%;
+}
+
+.singHead {
+  background: #f6f6f8;
+}
+
+.SingleContent {
+  padding: 40px 0;
+  background: #fafafa;
+}
+
+.SingleContent .singShapka {
+  text-align: center;
+}
+
+.SingleContent .singShapka h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  color: #777;
+}
+
+.SingleContent .singShapka .singShapkaLikes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.SingleContent .singShapka .singShapkaLikes p {
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #777;
+}
+
+.SingleContent .singShapka .singShapkaLikes p i {
+  padding-right: 5px;
+}
+
+.singleContentPic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.singleContentPic img {
+  width: 100%;
+}
+
+.singleText .SingleP {
+  max-width: 815px;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: 2.5em;
+  color: #777;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.singleText .SingleTextCommnet {
+  padding: 25px 40px;
+  border: 1px solid #777;
+  line-height: 2em;
+  color: #777;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "PT Serif";
+  font-style: italic;
+  border-left: 2px solid #777;
+}
+
+.singleText h4 {
+  margin-left: 125px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
 }

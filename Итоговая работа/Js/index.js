@@ -83,4 +83,7 @@ $('.btnInp').on('click', function () {
 $('.textBlog').on('click', function () {
   $('.blogH').siblings().slideToggle();
 })
+$('.perBtn').on("click", () => {
+  $('.perieraIcons').slideToggle();
+})
 });

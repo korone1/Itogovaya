@@ -1,0 +1,67 @@
+.singHead {
+    background: #f6f6f8;
+}
+.SingleContent {
+    padding: 40px 0;
+    background: #fafafa;
+    .singShapka {
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 500;
+            color: #777;
+        }
+        .singShapkaLikes {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+             p {
+                 padding: 0 25px;
+                 font-size: 14px;
+                 font-weight: 600;
+                 color: #777;
+                 i {
+                     padding-right: 5px;
+                 }
+             }
+        }
+    }
+}
+.singleContentPic {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    img {
+        width: 100%;
+    }
+}
+.singleText {
+    .SingleP{
+         max-width: 815px;
+         margin: 0 auto;
+         padding: 20px 0;
+         line-height: 2.5em;
+         color: #777;
+         font-weight: 600;
+         text-align: justify;
+    }
+    .SingleTextCommnet {
+      padding: 25px 40px;
+      border: 1px solid #777;
+      line-height: 2em;
+      color: #777;
+      font-weight: 600;
+      text-align: justify;
+      font-size: 20px;
+      font-family: "PT Serif";
+      font-style: italic;
+      border-left: 2px solid #777;
+    }
+    h4 {
+        margin-left: 125px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+}
+}
