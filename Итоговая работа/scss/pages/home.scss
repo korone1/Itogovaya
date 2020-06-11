@@ -269,10 +269,10 @@
     opacity: 0;
        a {
       font-size: 75px;
-      display: none;
       justify-content: center;
-      /// Плюс внутри доделать
-      height: calc(100% / 2);
+      align-items: center;
+      display: flex;
+      height: 100%;
       color: #fff;
       text-decoration: none;
     }

@@ -1,0 +1,104 @@
+.porfolioNav {
+    display: flex;
+    justify-content: space-between;
+    .perv {
+        display: flex;
+        p {
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+    .allShow {
+          p{
+            padding: 5px 20px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+          }  
+    }
+}
+.periera {
+    background: #fafafa;
+}
+.perieraContent {
+    h2 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #555;
+    }
+    .pPeriera {
+        font-weight: 600;
+        color: #555;
+        padding-top: 20px;
+    }
+    .perieraText {
+        border-top: 1px solid #777;
+        display: flex;
+        padding: 20px 0;
+        color: #555;
+        font-weight: 600;
+        }
+        .perieraP {
+            padding-left: 15px;
+         i {
+             padding-right: 5px;
+         }
+    }
+    .perieraP_text {
+        line-height: 2.2em;
+        color: #777;
+        font-weight: 500;
+        border-bottom: 1px solid #777;
+        padding-bottom: 30px;
+    }
+}
+.perieraPic {
+    .perieraPicFirst {
+        width: 100%;
+    }
+    .parieraImages {
+        display: flex;
+        justify-content: space-between;
+        img {
+            padding-top: 5px;
+            max-width: 120px;
+            width: 100%;
+        }
+    }
+}
+.perieraRole {
+    padding: 25px 0;
+    h4 {
+        text-transform: uppercase;
+        color: #555;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    p {
+        color: #777;
+        font-weight: 500;
+    }
+}
+.perieraTags {
+    h4 {
+        text-transform: uppercase;
+        color: #555;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    p {
+        color: #777;
+        font-weight: 500;
+    }
+}
+.perieraShare {
+    display: flex;
+    .perieraIcons {
+        display: flex;
+        padding-left: 20px;
+    }
+}

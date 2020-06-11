@@ -34,7 +34,7 @@ $(".owl-carousel").owlCarousel({
 });
 
 /// Кнопка наверх и страница Абаут анимация айтемов
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
   let btn = $("#buttonTop");
   let animated = $(".avesomePics");
 
@@ -47,16 +47,40 @@ jQuery(document).ready(function() {
       animated.removeClass("pulse");
     }
   });
+//// aNimate
 
   btn.on("click", function(e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "300");
   });
-
+//// Themes
   $(".InputBtn").on("click", function() {
     $(".navInput").toggleClass("activeInput");
   });
   $("#thema").on("click", function() {
     $("body, .aboutAvesome, .aboutSection, .Items").toggleClass("themaBack");
   });
+
+  /// Input 
+  /// Форма по событию отправки примиени отмену отправки
+$("form").on("submit", function (e) {
+  e.preventDefault();
+  let reg = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+  let inputFooter = $('input[name="inputFooter"]').val().trim();
+  let inputEmail = $('input[name="inputEmail"]').val().trim();
+  if (inputFooter && reg.test(inputEmail) ) {
+    alert ("Форма Отправлена");
+  }
+  else {
+    e.preventDefault();
+  }
+});
+//// Появление и исчезновение формы
+$('.btnInp').on('click', function () {
+  $('.formBlog').fadeToggle('formAct');
+})
+//// акардеон
+$('.textBlog').on('click', function () {
+  $('.blogH').siblings().slideToggle();
+})
 });
